@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Obsidian GSync — 個人用OAuthアプリ</title><style>body{margin:0;background:#f5f7fb;color:#182638;font:17px/1.85 system-ui,sans-serif}main{max-width:800px;margin:50px auto;padding:36px;background:white;border-top:6px solid #345c88;border-radius:10px}h1{line-height:1.4}h2{font-size:1.25em;margin-top:2em}a{color:#235d9d}.tag{color:#52677c;font-size:.9em}footer{border-top:1px solid #ddd;margin-top:40px;padding-top:20px;font-size:.85em}@media(max-width:600px){main{margin:16px;padding:24px}}</style></head><body><main>
+<p class="tag">個人利用のための設定情報</p><h1>Obsidian GSync<br>個人用OAuthアプリ</h1>
+<p>このページは、GitHubユーザー <a href="https://github.com/omosin1992">omosin1992</a> が、自分のGoogleアカウントでObsidianとGoogle Driveを同期するために設定したOAuthアプリ「Obsidian GSync」の説明ページです。一般向けの同期サービスや新規利用者の募集は行っていません。</p>
+<p>GSyncプラグインの開発者・公式サイトではありません。Obsidian、Google、GSync開発者との提携や公式認定を示すものではありません。</p>
+<h2>利用目的と動作</h2><p>iPhoneのObsidianでGSyncプラグインを使用し、端末内のVaultと利用者が指定したGoogle Driveフォルダを双方向同期します。WindowsではGoogle Drive for desktopを利用します。</p>
+<p>GSyncはファイルの一覧取得・読み取り・作成・更新、および設定に応じた削除の同期を行います。Googleへの認証とDrive APIへのアクセスには、利用者自身が設定したOAuthクライアントを使用します。</p>
+<h2>権限とデータの取り扱い</h2><p>要求する <code>https://www.googleapis.com/auth/drive</code> は、Google Drive全体のファイルを参照・編集・作成・削除できる権限です。GSyncの同期先フォルダ設定はプラグインの動作範囲を指定するもので、Googleの認可自体をそのフォルダだけに制限するものではありません。</p>
+<p>データの保存先、認証時のリダイレクトページ、および権限の取り消しについては、<a href="privacy.html">プライバシーポリシー</a>をご覧ください。この説明サイトにはログイン・認証コード入力・ファイルアップロード機能はありません。</p>
+<h2 id="terms">利用条件</h2><p>このOAuth設定は管理者本人の個人利用を目的とします。GSyncの利用には同プラグインのライセンス、Google・Obsidianなど各サービスの規約が適用されます。このページは同期の無停止、データの完全性、Googleの審査承認を保証するものではありません。重要なデータは別途バックアップし、同じ端末・Vaultに複数の同期機構を重ねないようにしてください。</p>
+<h2>公式資料・お問い合わせ</h2><p>プラグインの仕様：<a href="https://github.com/dg0988/ObsidianGSync">GSync公式リポジトリ</a><br>この個人用設定・説明ページに関する連絡：<a href="https://github.com/omosin1992/obsidian-gsync-oauth/issues">本リポジトリのIssues</a>。公開のため、秘密情報やノート本文を投稿しないでください。</p>
+<footer>管理：omosin1992 · 更新日：2026年10月15日 · <a href="privacy.html">プライバシーポリシー</a></footer>
+</main></body></html>
+
